@@ -1,0 +1,99 @@
+<html>
+<title>课程表</title>
+<script type="text/javascript">   
+function password() {   
+var testV = 1;   
+var pass1 = prompt('请输入密码','');   
+while (testV < 3) {   
+if (!pass1)   
+history.go(-1);   
+if (pass1 == "123") {//初始密码123   
+alert('密码正确');   
+break;   
+}   
+testV+=1;   
+var pass1 =   
+prompt('密码错误!请重新输入:');   
+}   
+if (pass1!="password" & testV ==3)   
+history.go(-1);   
+return " ";   
+}   
+document.write(password());   
+</script>  
+<body>
+    <table border=6 frame=void align=center  height=100px cellspacing=0px cellpadding=10px>
+        <tr height=50px align=center>
+            <th width=110px></th>
+            <th>
+                <font color=blue>一</font>
+            </th>
+            <th>
+                <font color=blue>二</font>
+            </th>
+            <th>
+                <font color=blue>三</font>
+            </th>
+            <th>
+                <font color=blue>四</font>
+            </th>
+            <th>
+                <font color=blue>五</font>
+            </th>
+        </tr>
+        <tr height=40px align=center>
+            <td></td>
+            <td colspan=5 color=red>
+                <font color="red"><b>上午</b></font>
+            </td>
+        </tr>
+        <tr height=40px align=center>
+            <td>
+                <font color=blue><b>8:00-9:40</b></font>
+            </td>
+            <td>无</td>
+            <td>无</td>
+            <td>可靠性/1-16 2203</td>
+            <td>传感器/1-13D2203</td>
+            <td>无</td>
+        </tr>
+        <tr height=40px align=center>
+            <td>
+                <font color=blue><b>10:00-11:40</b></font>
+            </td>
+            <td>PLC/1-12 2201</td>
+            <td>传感器/1-14 2203</td>
+            <td>测控电路/1-16 2201</td>
+            <td>无</td>
+            <td>无</td>
+        </tr>
+        <tr height=40px align=center>
+            <td></td>
+            <td colspan=5>
+                <font color="red"><b>下午</b></font>
+            </td>
+        </tr>
+        <tr height=40px align=center>
+            <td>
+                <font color=blue><b>56</b></font>
+            </td>
+            <td width=100px>无</td>
+            <td width=100px>汽车测试/1-12 2210</td>
+            <td width=100px>无</td>
+            <td width=100px>无</td>
+            <td width=100px>无</td>
+        </tr>
+        <tr height=40px align=center>
+            <td>
+                <font color=blue><b>78</b></font>
+            </td>
+            <td width=100px>无</td>
+            <td width=100px>无</td>
+            <td width=100px>无</td>
+            <td width=100px>无</td>
+            <td width=100px>无</td>
+        </tr>
+    </table>
+
+</body>
+</html>
